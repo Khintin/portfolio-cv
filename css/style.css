@@ -1,0 +1,446 @@
+* {
+  margin: 0;
+}
+
+.mini-logo {
+  max-width: 60px;
+  margin: 5px 0 5px 30px;
+}
+
+h1,
+h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h3,
+h4,
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.red {
+  color: #ff0505;
+}
+
+ol li {
+  margin: 2rem 1rem 2rem 1rem;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+.mousebtn {
+  max-width: 50px;
+}
+
+.button {
+  display: block;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.button a {
+  display: flex;
+
+  align-items: center;
+  background-color: #191919;
+  color: white;
+  transition: 0.2s ease;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  width: 140px;
+}
+
+.button:hover,
+.button a:hover {
+  background: white;
+  color: #191919;
+  border-radius: 0.5rem;
+  width: 140px;
+}
+
+.venti-logo {
+  display: flex;
+  flex-direction: row;
+  opacity: 80%;
+}
+
+.front {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Hidethe links inside the navigation menu (except for logo/home) */
+header nav .btn-mobile-menu {
+  display: none;
+}
+
+header {
+  background-color: #191919;
+}
+
+header nav label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  height: 51px;
+  width: 51px;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  transition: transform 0.8s ease;
+  margin: 0 10px;
+}
+
+header nav label img {
+  height: 25px;
+  width: 40px;
+  color: #191919;
+  background-color: black;
+}
+
+header nav .btn-mobile-menu:checked ~ ul {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  align-items: center;
+}
+
+header nav .btn-mobile-menu:checked ~ label {
+  transform: rotateZ(180deg);
+}
+
+header nav ul {
+  display: none;
+  background-color: #191919;
+  gap: 4rem;
+  padding: 4rem 0 4rem 0;
+}
+
+header li a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul {
+  flex-direction: row;
+  justify-content: left;
+  list-style: none;
+  max-width: 100%;
+}
+
+nav ul li a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+nav ul li a.active {
+  color: white;
+  background-color: rgb(218, 218, 218);
+  border-radius: 5px;
+}
+
+header nav ul li a.active,
+header nav ul li a:hover {
+  color: #ff0505;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: white;
+  background-color: #191919;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/*TALKS*/
+.reach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: azure;
+  font-size: 20px;
+  padding: 2rem;
+  margin: 10rem 0;
+}
+
+.reach img {
+  width: 40px;
+}
+
+.reach a :hover {
+  opacity: 70%;
+}
+
+.social-profile {
+  margin: 4rem 0;
+}
+
+/* ABOUT */
+
+.myphoto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 75%;
+  width: 250px;
+  margin: 2rem 0;
+  box-shadow: 10px;
+}
+
+.self-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #191919;
+  margin: 4rem 0;
+}
+
+.section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+h3 {
+  margin: 3rem 0;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.self-info .red {
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.self-info p {
+  flex-wrap: wrap;
+  color: white;
+  padding: 00.5rem;
+  margin: 0 2rem;
+  font-size: 18px;
+}
+
+.skills-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: azure;
+}
+
+.skills-info h2 {
+  font-size: 25px;
+  margin: 2rem 0;
+}
+
+.tools-info img {
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  padding: 1rem;
+}
+
+.tools-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tools-one,
+.tools-two,
+.tools-three,
+.tools-four,
+.tools-five {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+
+/* projects */
+
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+  gap: 3rem;
+}
+
+.exam-work,
+.semester-work,
+.course-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #191919;
+  padding: 2rem;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .tools-info {
+    flex-direction: column;
+  }
+
+  .tools-info img {
+    width: 100px;
+  }
+
+  .tools-one,
+  .tools-two,
+  .tools-three,
+  .tools-four,
+  .tools-five {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/*PC*/
+
+@media screen and (min-width: 1200px) {
+  header {
+    margin: auto;
+  }
+
+  header label {
+    display: none;
+  }
+
+  header nav .btn-mobile-menu {
+    display: none;
+  }
+
+  header nav label {
+    display: none;
+  }
+
+  header nav {
+    flex: 1 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: end;
+  }
+
+  header nav ul,
+  .mini-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  header nav ul li a {
+    padding: 0;
+    display: block;
+  }
+
+  header nav ul {
+    gap: 4rem;
+    padding: 2rem 0 2rem 0;
+  }
+
+  .mainhead {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0rem 4rem;
+    justify-content: center;
+  }
+
+  .front {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 4rem;
+  }
+
+  .venti-logo {
+    width: 350px;
+  }
+
+  ol,
+  .venti-logo {
+    flex: 0 0 45%;
+  }
+
+  ol {
+    gap: 2rem;
+  }
+
+  .mywork {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .front .button {
+    margin-left: 50%;
+  }
+
+  .button a {
+    width: 150px;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+
+  .button:hover,
+  .button a:hover {
+    width: 150px;
+    justify-content: center;
+    padding-right: 2rem;
+  }
+
+  .mousebtn {
+    max-width: 70px;
+  }
+
+  /*about*/
+  .self-info {
+    display: flex;
+
+    justify-content: center;
+    padding: 1rem;
+    flex-direction: row;
+    gap: 2rem;
+    flex: 0 0 50%;
+  }
+
+  .self-info p {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin: 1rem 4rem;
+  }
+
+  .myphoto img {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
+
+  .myphoto img {
+    width: 250px;
+  }
+}
